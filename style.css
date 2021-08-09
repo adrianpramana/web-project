@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  color: black;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+  transition: transform 0.5s;
+  transform: translateY(-5px);
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+/* Style pada navbar */
+.navmenu:hover {
+  background: grey;
+}
+.navmenu {
+  display: inline-block;
+  color: black;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+/* Style pada button speeding */
+.btn:hover {
+  background: red;
+}
+.btn {
+  display: inline-block;
+  background: black;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+.header {
+  background: radial-gradient(#fff, grey);
+}
+.header row {
+  margin-top: 70px;
+}
+.categories {
+  margin: 70px 0;
+}
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 100%;
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 50px;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img {
+  width: 100%;
+}
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  color: grey;
+}
+
+.produkawal::after {
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.title::after {
+  content: '';
+  background: grey;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h4 {
+  color: grey;
+  font-weight: normal;
+}
+.col-4 p {
+  font-size: 14px;
+}
+.rating .fa {
+  color: black;
+}
+.col-4:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: grey;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p {
+  color: grey;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-2 {
+  text-align: center;
+}
+.footer-col-2 img {
+  margin-bottom: 20px;
+}
+.footer-col-4 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+.footer hr {
+  border: none;
+  background: white;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+}
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+/*Syntax Menu*/
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0%;
+    background: #333;
+    width: 100px;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+/* Contact */
+.contact-title {
+  margin-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+.contact-title h1 {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+}
+.contact-title h2 {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+.contact-form {
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.form-control {
+  width: 500px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+form .submit {
+  background: black;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+form .submit:hover {
+  background-color: grey;
+  cursor: pointer;
+}
